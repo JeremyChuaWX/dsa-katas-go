@@ -18,12 +18,12 @@ func main() {
 		log.Fatal("missing kata name")
 	}
 
-	templatePath := fmt.Sprintf("./templates/%s.tmpl", *name)
-	newPath := fmt.Sprintf("./katas/%s.go", *name)
+	templatePath := fmt.Sprintf("./templates/%s.template", *name)
+	stubPath := fmt.Sprintf("./katas/%s.go", *name)
 
-	_, err := os.Stat(newPath)
+	_, err := os.Stat(stubPath)
 	if !errors.Is(err, os.ErrNotExist) && !*force {
-		log.Fatalf("%s already exists", newPath)
+		log.Fatalf("%s already exists", stubPath)
 	}
 
 	templateFile, err := os.Open(templatePath)
@@ -32,21 +32,21 @@ func main() {
 	}
 	defer templateFile.Close()
 
-	newFile, err := os.Create(newPath)
+	stubFile, err := os.Create(stubPath)
 	if err != nil {
 		log.Fatal(err)
 	}
-	defer newFile.Close()
+	defer stubFile.Close()
 
-	bytesWritten, err := io.Copy(newFile, templateFile)
+	bytesWritten, err := io.Copy(stubFile, templateFile)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	log.Printf(
-		"generated ./katas/%s.go from ./templates/%s.tmpl (%d bytes written)\n",
-		*name,
-		*name,
+		"generated %s from %s (%d bytes written)\n",
+		stubPath,
+		templatePath,
 		bytesWritten,
 	)
 }
