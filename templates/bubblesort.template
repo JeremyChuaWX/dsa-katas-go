@@ -1,0 +1,5 @@
+package katas
+
+// return swapped status
+func BubbleSort(arr []int) bool {
+}

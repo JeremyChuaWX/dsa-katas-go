@@ -8,7 +8,7 @@ Some katas to practice DSA in Go.
 
 - \[x\] Binary search
 - \[x\] Selection sort
-- \[ \] Bubble sort
+- \[x\] Bubble sort
 - \[ \] Inserstion sort
 - \[ \] Merge sort
 - \[ \] Quick sort
