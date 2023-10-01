@@ -34,3 +34,17 @@ Some katas to practice DSA in Go.
 - Coin change problem
 - Comparing binary trees
 - Maximum subarray
+
+## How to use
+
+- To test the katas, run the command
+
+  ```bash
+  go test ./katas_test
+  ```
+
+- To generate template files, run the command
+
+  ```bash
+  go run ./templater.go --name <name-of-kata>
+  ```

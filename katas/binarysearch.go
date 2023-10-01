@@ -1,4 +1,4 @@
-package main
+package katas
 
 func binarySearch(needle int, arr []int, start int, end int) bool {
 	if start >= end {
