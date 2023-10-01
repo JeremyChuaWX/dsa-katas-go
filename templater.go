@@ -11,7 +11,7 @@ import (
 
 func main() {
 	name := flag.String("name", "", "name of the kata")
-	force := flag.Bool("force", false, "name of the kata")
+	force := flag.Bool("force", false, "replace existing files")
 	flag.Parse()
 
 	if name == nil || *name == "" {
