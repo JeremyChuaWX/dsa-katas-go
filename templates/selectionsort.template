@@ -1,0 +1,4 @@
+package katas
+
+func SelectionSort(arr []int) {
+}
