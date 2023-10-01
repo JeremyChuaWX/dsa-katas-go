@@ -43,8 +43,10 @@ Some katas to practice DSA in Go.
   go test ./katas_test
   ```
 
-- To generate template files, run the command
+- To generate stubs from template files, run the command
 
   ```bash
   go run ./templater.go --name <name-of-kata>
   ```
+
+  Add the `--force` flag to forcefully reset existing katas
