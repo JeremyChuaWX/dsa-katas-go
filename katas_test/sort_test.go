@@ -32,3 +32,12 @@ func TestBubbleSort(t *testing.T) {
 		t.Fatal("fail to short circuit")
 	}
 }
+
+func TestInsertionSort(t *testing.T) {
+	arr := []int{5, 3, 1, 2, 4}
+	katas.InsertionSort(arr)
+
+	if !reflect.DeepEqual(arr, sorted) {
+		t.Fatal("not sorted")
+	}
+}
