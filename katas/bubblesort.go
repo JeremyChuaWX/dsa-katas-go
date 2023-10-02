@@ -15,9 +15,9 @@ func BubbleSort(arr []int) bool {
 		}
 
 		if !swap {
-			return true
+			return false
 		}
 	}
 
-	return false
+	return true
 }
