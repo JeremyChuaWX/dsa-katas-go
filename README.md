@@ -10,7 +10,7 @@ Some katas to practice DSA in Go.
 - \[x\] Selection sort
 - \[x\] Bubble sort
 - \[x\] Inserstion sort
-- \[ \] Merge sort
+- \[x\] Merge sort
 - \[ \] Quick sort
 - \[ \] DFS for binary tree
 - \[ \] BFS for binary tree

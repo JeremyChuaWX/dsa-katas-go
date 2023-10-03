@@ -41,3 +41,12 @@ func TestInsertionSort(t *testing.T) {
 		t.Fatal("not sorted")
 	}
 }
+
+func TestMergeSort(t *testing.T) {
+	arr := []int{5, 3, 1, 2, 4}
+	res := katas.MergeSort(arr)
+
+	if !reflect.DeepEqual(res, sorted) {
+		t.Fatal("not sorted")
+	}
+}
