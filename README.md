@@ -11,7 +11,7 @@ Some katas to practice DSA in Go.
 - \[x\] Bubble sort
 - \[x\] Inserstion sort
 - \[x\] Merge sort
-- \[ \] Quick sort
+- \[x\] Quick sort
 - \[ \] DFS for binary tree
 - \[ \] BFS for binary tree
 - \[ \] DFS for graph
@@ -40,7 +40,7 @@ Some katas to practice DSA in Go.
 - To test the katas, run the command
 
   ```bash
-  go test ./katas_test
+  go test -v ./katas_test
   ```
 
 - To generate stubs from template files, run the command

@@ -50,3 +50,12 @@ func TestMergeSort(t *testing.T) {
 		t.Fatal("not sorted")
 	}
 }
+
+func TestQuickSort(t *testing.T) {
+	arr := []int{5, 3, 1, 2, 4}
+	katas.QuickSort(arr)
+
+	if !reflect.DeepEqual(arr, sorted) {
+		t.Fatal("not sorted")
+	}
+}
