@@ -12,8 +12,8 @@ Some katas to practice DSA in Go.
 - \[x\] Inserstion sort
 - \[x\] Merge sort
 - \[x\] Quick sort
-- \[ \] DFS for binary tree
-- \[ \] BFS for binary tree
+- \[ \] Depth first traversal for binary tree
+- \[ \] Breadth first traversal for binary tree
 - \[ \] DFS for graph
 - \[ \] BFS for graph
 - \[ \] Dijkstra's algorithm
