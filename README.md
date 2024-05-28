@@ -1,10 +1,6 @@
-# Dsa Katas - Go
+# Go Katas
 
-Some katas to practice DSA in Go.
-
-## Content
-
-### Algorithms
+## Algorithms
 
 - \[x\] Binary search
 - \[x\] Selection sort
@@ -17,23 +13,7 @@ Some katas to practice DSA in Go.
 - \[ \] Dijkstra's algorithm
 - \[ \] Prim's algorithm
 
-### Data Structures
-
-- \[ \] Binary search tree
-- \[ \] AVL tree
-- \[ \] AB tree
-- \[ \] Heap
-- \[ \] Trie
-- \[ \] Hashmap
-- \[ \] LRU
-
-### Miscellaneous
-
-- \[ \] Coin change problem
-- \[ \] Comparing binary trees
-- \[ \] Maximum subarray
-
-## How to use
+## Usage
 
 - To test the katas, run the command
 
