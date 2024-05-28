@@ -84,3 +84,13 @@ func TestBFS(t *testing.T) {
 		t.Fatal()
 	}
 }
+
+func TestDFS(t *testing.T) {
+	if katas.DFS(3, 1, utils.TestDAG) {
+		t.Fatal()
+	}
+
+	if !katas.DFS(3, 1, utils.TestGraph) {
+		t.Fatal()
+	}
+}

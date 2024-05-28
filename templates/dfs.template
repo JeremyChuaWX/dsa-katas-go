@@ -1,0 +1,6 @@
+package katas
+
+import "dsa-katas/utils"
+
+func DFS(start int, needle int, graph utils.Graph) bool {
+}

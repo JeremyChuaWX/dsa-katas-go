@@ -12,7 +12,7 @@ Some katas to practice DSA in Go.
 - \[x\] Inserstion sort
 - \[x\] Merge sort
 - \[x\] Quick sort
-- \[ \] DFS
+- \[x\] DFS
 - \[x\] BFS
 - \[ \] Dijkstra's algorithm
 - \[ \] Prim's algorithm
