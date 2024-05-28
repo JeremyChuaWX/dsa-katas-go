@@ -4,27 +4,23 @@ import "dsa-katas/utils"
 
 func dfs(
 	curr int,
-	needle int,
 	graph utils.Graph,
 	visitedNodes map[int]bool,
-) bool {
-	if curr == needle {
-		return true
-	}
+	path []int,
+) []int {
 	visited, ok := visitedNodes[curr]
 	if ok && visited {
-		return false
+		return path
 	}
 	visitedNodes[curr] = true
+	path = append(path, curr)
 	for _, neighbor := range graph[curr] {
-		if dfs(neighbor, needle, graph, visitedNodes) {
-			return true
-		}
+		path = dfs(neighbor, graph, visitedNodes, path)
 	}
-	return false
+	return path
 }
 
-func DFS(start int, needle int, graph utils.Graph) bool {
+func DFS(start int, graph utils.Graph) []int {
 	visitedNodes := make(map[int]bool)
-	return dfs(start, needle, graph, visitedNodes)
+	return dfs(start, graph, visitedNodes, []int{})
 }

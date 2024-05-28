@@ -89,11 +89,14 @@ func TestBFS(t *testing.T) {
 }
 
 func TestDFS(t *testing.T) {
-	if katas.DFS(3, 1, utils.TestDAG) {
+	if !reflect.DeepEqual(katas.DFS(3, utils.TestDAG), []int{3, 5, 6}) {
 		t.Fatal()
 	}
 
-	if !katas.DFS(3, 1, utils.TestGraph) {
+	if !reflect.DeepEqual(
+		katas.DFS(3, utils.TestGraph),
+		[]int{3, 1, 2, 4, 5, 6},
+	) {
 		t.Fatal()
 	}
 }
