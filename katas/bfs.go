@@ -4,10 +4,11 @@ import (
 	"dsa-katas/utils"
 )
 
-func BFS(start int, needle int, graph utils.Graph) bool {
+func BFS(start int, graph utils.Graph) []int {
 	idx := 0
 	queue := []int{start}
 	visitedNodes := make(map[int]bool)
+	path := []int{}
 	for {
 		if idx >= len(queue) {
 			break
@@ -18,13 +19,11 @@ func BFS(start int, needle int, graph utils.Graph) bool {
 		if ok && visited {
 			continue
 		}
-		if node == needle {
-			return true
-		}
 		visitedNodes[node] = true
-		for neighbor := range graph[node] {
+		path = append(path, node)
+		for _, neighbor := range graph[node] {
 			queue = append(queue, neighbor)
 		}
 	}
-	return false
+	return path
 }

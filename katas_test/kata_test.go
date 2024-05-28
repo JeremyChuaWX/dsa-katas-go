@@ -76,11 +76,14 @@ func TestQuickSort(t *testing.T) {
 }
 
 func TestBFS(t *testing.T) {
-	if katas.BFS(3, 1, utils.TestDAG) {
+	if !reflect.DeepEqual(katas.BFS(3, utils.TestDAG), []int{3, 5, 6}) {
 		t.Fatal()
 	}
 
-	if !katas.BFS(3, 1, utils.TestGraph) {
+	if !reflect.DeepEqual(
+		katas.BFS(3, utils.TestGraph),
+		[]int{3, 1, 2, 5, 4, 6},
+	) {
 		t.Fatal()
 	}
 }
